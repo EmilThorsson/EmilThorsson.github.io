@@ -1,0 +1,26 @@
+body{
+height:100vh;
+margin: 0;
+padding: 0;
+background: linear-gradient(#f2700c, #6d83ed, #f2700c)
+}
+
+header{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 30px 100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 1000;
+}
+
+#logo{
+color: #fff;
+font-weight: 700;
+text-decoration: none;
+font-size: 2em;
+text-transform: uppercase;
+}

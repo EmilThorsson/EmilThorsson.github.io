@@ -59,10 +59,11 @@
     let fg = document.getElementById('fg');
     let capybara = document.getElementById('capybara');
 
-    window.addEventListener('scroll', function() {
+     window.addEventListener('scroll', function() {
         let value = window.scrollY;
+        const t = document.body.getBoundingClientRect().top;
 
-        clouds.style.left = value * 0.75 + 'px';
+        clouds.style.left = t * 0.75 + 'px';
         clouds.style.top = value * 1 + 'px';
         middle.style.top = value * 1 + 'px';
         fg.style.left = value * 0.05 + 'px';
@@ -72,12 +73,31 @@
         capybara.style.top = value * 1 + 700 + 'px';
         capybara.style.right = value * 0.15 + 'px';
 
-    })
+     })
+
  </script>
- <script>
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
+<script>
 
+ $("#info").click(function () {
+        $("html,body").animate(
+            {
+                scrollTop: $(".sec").offset().top - 50,
+            },
+            500
+        );
+    });
 
-
+    $("#frågaoss").click(function () {
+            $("html,body").animate(
+                {
+                    scrollTop: $("#emailruta").offset().top - 50,
+                },
+                500
+            );
+        });
 
  </script>
 
@@ -86,7 +106,7 @@
             <label for="emailruta" id="emailtext">Vid övriga frågor, ställ den här!</label>
             <input type="email" id="emailruta" name="emails" size="30">
             <input type="submit" id="submitruta">
-        <p id="skolarbete">Detta är ett skolarbete. <br><br> Skapad av Emil Thorsson <br><br> Birger Sjöbergsgymnasiet <br><br> 462 23 Vänersborg</p>
+        <p id="skolarbete">Detta är ett skolarbete. <br><br> Skapad av Emil Thorsson <br><br> Birger Sjöbergsgymnasiet <br> 462 23 Vänersborg</p>
     </div>
 </footer>
    

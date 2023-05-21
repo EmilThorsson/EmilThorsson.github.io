@@ -11,7 +11,7 @@ scroll-behavior: smooth;
 }
 
 body{
-    background-color: #E9CFC0;
+    background-color:#331C12;
     padding: 0;
     margin: 0;
 }
@@ -66,11 +66,20 @@ main{
     transition: 0.45s;
 }
 
-.sec {
+.first {
     position: absolute;
-    margin-top: 200px;
     background: var(--grey-hide);
     padding: 2rem;
+    font-size: 23px;
+    margin-top: 46%;
+}
+
+.sec {
+    position: absolute;
+    background: var(--grey-hide);
+    padding: 2rem;
+    font-size: 23px;
+    margin-top: 125%;
 }
 
 #sky {
@@ -101,26 +110,28 @@ main{
 .Text {
     position: absolute;
     z-index: 10;
-    top: 14%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     text-transform: uppercase;
     color: #fff;
-    background: var(--grey-hide);
     padding: 2rem;
+    
 }
 
 .Text h2 {
     font-weight: 100;
     font-size: 6.5rem;
-    
+    background: var(--grey-hide);
 }
 
 .Text h1 {
     font-weight: 800;
     font-size: 8rem;
     line-height: 0.88;
+    background: var(--grey-hide);
+    margin-bottom: -25%;
 }
 
 #capybara{
@@ -140,6 +151,7 @@ main{
 
 #references{
     padding: 100px;
+    
 }
 
 #emailtext{
@@ -147,6 +159,7 @@ main{
     left: 35%;
     font-size: 20px;
     right: 50%;
+    color: #fff;
 }
 
 #emailruta{
@@ -164,9 +177,23 @@ main{
 #skolarbete{
     font-size: 20px;
     padding: 70px;
+    color: #fff;
 }
 
 @media screen and (max-width: 1200px){
+
+#emailtext{
+   position: static;
+}
+
+#emailruta{
+    position: static;
+    
+}
+
+#submitruta{
+    position: static;
+}
 
 }
 
@@ -174,34 +201,37 @@ main{
 
 .Text h2 {
     font-size: 70px;
+   
 }
 
 .Text h1 {
     font-size: 80px;
 }
 
-#references{
-    display: flex;
-    flex-wrap: wrap;
+.first {
+    font-size: 18px;
+   
+}
+
+.sec{
+    font-size: 18px;
+    margin-top: 180%;
 }
 
 #emailtext {
     position: static;
-    left: 0%;
     font-size: 20px;
-    right: 0%;
+   
 }
 
 #emailruta {
     position: static;
-    left: 0%;
-    right: 0%;
+   
 }
 
 #submitruta {
     position: static;
-    left: 0%;
-    right: 0%;
+    
 }
 
 }
@@ -216,6 +246,16 @@ main{
     font-size: 60px;
 }
 
+.first{
+    font-size: 12px;
+    margin-top: 100%;
+}
+
+.sec{
+    font-size: 12px;
+    margin-top: 230%;
+}
+
 }
 
 @media screen and (max-width: 407px){
@@ -228,6 +268,11 @@ main{
 #frågaoss{
     display: flex;
     font-size: 12px;
+}
+
+#skolarbete{
+    font-size: 18px;
+    
 }
 
 }

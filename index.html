@@ -11,42 +11,53 @@
 <body>
     <header>
         <nav>
-            <img src="img/lövlogo.png" alt="" class="logo">
+            <img src="img/lövlogo.png" alt="" class="logo" tabindex="1">
             <ul>
                 <li>
-                    <a href="#" id="info">Info</a>
+                    <a href="#" id="info" tabindex="2">Info</a>
                 </li>
                 <li>
-                    <a href="#" id="frågaoss">Fråga oss</a>
+                    <a href="#" id="frågaoss" tabindex="3">Fråga oss</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <img src="img/sky.png" alt="" id="sky">
-        <img src="img/background_hills.png" alt="" id="bg">
-        <img src="img/clouds.png" alt="" id="clouds">
-        <img src="img/middle_part.png" alt="" id="middle">
-        <img src="img/capybara.png" alt="" id="capybara">
-        <img src="img/foreground.png" alt="" id="fg">
+        <img src="img/sky.png" alt="gul-orange himmel" id="sky" height="1000px">
+        <img src="img/background_hills.png" alt="rosa kullar" id="bg">
+        <img src="img/clouds.png" alt="vita moln" id="clouds">
+        <img src="img/middle_part.png" alt="gröna kullar med vegetation" id="middle">
+        <img src="img/capybara.png" alt="capybara" id="capybara">
+        <img src="img/foreground.png" alt="brun mark med vegetation" id="fg">
         <div class="Text parallax">
-            <h2 id="VärnaOmText">Värna om</h2>
-            <h1 id="NaturenText">Naturen</h1>
+            <h2 id="VärnaOmText" tabindex="4">Värna om</h2>
+            <h1 id="NaturenText" tabindex="5">Naturen</h1>
             
-            <div class="sec">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, impedit cumque voluptatibus sunt officiis eaque.
-                Accusantium nihil deserunt provident iusto obcaecati mollitia ab! Et, perferendis nisi enim praesentium minus
-                nostrum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, aut suscipit libero deserunt nisi quod
-                molestias perspiciatis quis porro tempora atque assumenda consequatur voluptas, tenetur harum quidem! Odio, cumque
-                autem.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, impedit cumque voluptatibus sunt officiis eaque.
-                Accusantium nihil deserunt provident iusto obcaecati mollitia ab! Et, perferendis nisi enim praesentium minus
-                nostrum.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, aut suscipit libero deserunt nisi quod molestias
-                perspiciatis quis porro tempora atque assumenda consequatur voluptas, tenetur harum quidem! Odio, cumque autem. Vi
-                har bara en planet. Tänk noga.</p>
+            <div class="first" tabindex="6">
+            <p> Naturen är ett fenomen som genom alla tider varit livsviktig för överlevnad på jorden. Bibehållandet av naturen har
+                varit lyckat, då jorden fortfarande alstrar liv cirka 4,5 miljarder år efter dess födelse. Under denna långa tidsperiod
+                har mycket hänt, men kanske allra mest under de senaste 200 000 åren när den moderna människoarten kom till. Under endast de 100
+                senaste åren har utvecklingen exempelvis gått från att vårat transportmedel var häst och vagn till att det idag finns självkörande bilar drivna på elektricitet.
+                Detta har lett till ett allt större behov av naturresurser, samtidigt som vi ökar i global befolkning i rasande fart.
+                För att värna om naturen behöver alla hjälpas åt och göra kloka och hållbara val.</p>
             </div>
+
+             <div class="sec" tabindex="7">  
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, impedit cumque voluptatibus sunt officiis eaque.
+            Accusantium nihil deserunt provident iusto obcaecati mollitia ab! Et, perferendis nisi enim praesentium minus
+            nostrum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, aut suscipit libero deserunt nisi quod
+            molestias perspiciatis quis porro tempora atque assumenda consequatur voluptas, tenetur harum quidem! Odio, cumque
+            autem.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, impedit cumque voluptatibus sunt officiis eaque.
+            Accusantium nihil deserunt provident iusto obcaecati mollitia ab! Et, perferendis nisi enim praesentium minus
+            nostrum.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, aut suscipit libero deserunt nisi quod molestias
+            perspiciatis quis porro tempora atque assumenda consequatur voluptas, tenetur harum quidem! Odio, cumque autem. Vi
+            har bara en planet. Tänk noga. </p>
+                </div>
 </div>
+            
+
             
     </main>
  <script src="js/script.js"></script>
@@ -58,12 +69,13 @@
     let middle = document.getElementById('middle');
     let fg = document.getElementById('fg');
     let capybara = document.getElementById('capybara');
+    let VärnaOmText = document.getElementById('VärnaOmText');
+    let NaturenText = document.getElementById('NaturenText');
 
      window.addEventListener('scroll', function() {
         let value = window.scrollY;
-        const t = document.body.getBoundingClientRect().top;
 
-        clouds.style.left = t * 0.75 + 'px';
+        clouds.style.left = value * 0.75 + 'px';
         clouds.style.top = value * 1 + 'px';
         middle.style.top = value * 1 + 'px';
         fg.style.left = value * 0.05 + 'px';
@@ -84,7 +96,7 @@
  $("#info").click(function () {
         $("html,body").animate(
             {
-                scrollTop: $(".sec").offset().top - 50,
+                scrollTop: $(".first").offset().top - 50,
             },
             500
         );
@@ -103,10 +115,10 @@
 
 <footer>
     <div id="references">
-            <label for="emailruta" id="emailtext">Vid övriga frågor, ställ den här!</label>
-            <input type="email" id="emailruta" name="emails" size="30">
-            <input type="submit" id="submitruta">
-        <p id="skolarbete">Detta är ett skolarbete. <br><br> Skapad av Emil Thorsson <br><br> Birger Sjöbergsgymnasiet <br> 462 23 Vänersborg</p>
+            <label for="emailruta" id="emailtext" tabindex="8">Vid övriga frågor, ställ den här!</label>
+            <input type="email" id="emailruta" name="emails" size="30" tabindex="9">
+            <input type="submit" id="submitruta" tabindex="10">
+        <p id="skolarbete" tabindex="11">Detta är ett skolarbete. <br><br> Skapad av Emil Thorsson <br><br> Birger Sjöbergsgymnasiet <br> 462 23 Vänersborg</p>
     </div>
 </footer>
    

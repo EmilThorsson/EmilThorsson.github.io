@@ -61,11 +61,6 @@ main{
     overflow: hidden;
 }
 
-.parallax{
-    pointer-events: none;
-    transition: 0.45s;
-}
-
 .first {
     position: absolute;
     background: var(--grey-hide);

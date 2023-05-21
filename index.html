@@ -1,27 +1,97 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Parallax website</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Parallax Website</title>
+    <link rel="icon" href="img/lövlogo.png" type="image/x-icon" />
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/lövlogo.PNG" alt="" class="logo">
+            <ul>
+                <li>
+                    <a href="#" id="info">Info</a>
+                </li>
+                <li>
+                    <a href="#" id="frågaoss">Fråga oss</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img src="img/sky.png" alt="" id="sky">
+        <img src="img/background_hills.png" alt="" id="bg">
+        <img src="img/clouds.png" alt="" id="clouds">
+        <img src="img/middle_part.png" alt="" id="middle">
+        <img src="img/capybara.png" alt="" id="capybara">
+        <img src="img/foreground.png" alt="" id="fg">
+        <div class="Text parallax">
+            <h2 id="VärnaOmText">Värna om</h2>
+            <h1 id="NaturenText">Naturen</h1>
+            
+            <div class="sec">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, impedit cumque voluptatibus sunt officiis eaque.
+                Accusantium nihil deserunt provident iusto obcaecati mollitia ab! Et, perferendis nisi enim praesentium minus
+                nostrum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, aut suscipit libero deserunt nisi quod
+                molestias perspiciatis quis porro tempora atque assumenda consequatur voluptas, tenetur harum quidem! Odio, cumque
+                autem.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, impedit cumque voluptatibus sunt officiis eaque.
+                Accusantium nihil deserunt provident iusto obcaecati mollitia ab! Et, perferendis nisi enim praesentium minus
+                nostrum.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, aut suscipit libero deserunt nisi quod molestias
+                perspiciatis quis porro tempora atque assumenda consequatur voluptas, tenetur harum quidem! Odio, cumque autem. Vi
+                har bara en planet. Tänk noga.</p>
+            </div>
+</div>
+            
+    </main>
+ <script src="js/script.js"></script>
 
-<header>
-  <a href="#" id="logo">Logo</a>
+ <script>
+    let sky = document.getElementById('sky');
+    let bg = document.getElementById('bg');
+    let clouds = document.getElementById('clouds');
+    let middle = document.getElementById('middle');
+    let fg = document.getElementById('fg');
+    let capybara = document.getElementById('capybara');
 
-  <a href="#">About</a>
-  <a href="#">Contact</a>
-</header>
-<section>
-  <img src="moon.png" alt="moon" id="moon">
-  <img src="" alt="" id="">
-</section>
+    window.addEventListener('scroll', function() {
+        let value = window.scrollY;
+
+        clouds.style.left = value * 0.75 + 'px';
+        clouds.style.top = value * 1 + 'px';
+        middle.style.top = value * 1 + 'px';
+        fg.style.left = value * 0.05 + 'px';
+        fg.style.top = value * 1 + 'px';
+        sky.style.top = value * 1 + 'px';
+        bg.style.top = value * 1 + 'px';
+        capybara.style.top = value * 1 + 700 + 'px';
+        capybara.style.right = value * 0.15 + 'px';
+
+    })
+ </script>
+ <script>
 
 
 
 
+ </script>
+
+<footer>
+    <div id="references">
+            <label for="emailruta" id="emailtext">Vid övriga frågor, ställ den här!</label>
+            <input type="email" id="emailruta" name="emails" size="30">
+            <input type="submit" id="submitruta">
+        <p id="skolarbete">Detta är ett skolarbete. <br><br> Skapad av Emil Thorsson <br><br> Birger Sjöbergsgymnasiet <br><br> 462 23 Vänersborg</p>
+    </div>
+</footer>
+   
 
 
-  </body>
+
+</body>
 </html>

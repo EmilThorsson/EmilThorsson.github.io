@@ -1,0 +1,233 @@
+
+:root {
+    --grey-hide: hsla(0, 0%, 0%, 0.1);
+}
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+
+body{
+    background-color: #E9CFC0;
+    padding: 0;
+    margin: 0;
+}
+
+.logo{
+    width: 100px;
+}
+
+header{
+    position: absolute;
+    z-index: 10000;
+    width: 100%;
+    padding: 0.9rem;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+header nav{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header ul a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.83rem;
+}
+
+main{
+    position: relative;
+    height: 200vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.parallax{
+    pointer-events: none;
+    transition: 0.45s;
+}
+
+.sec {
+    position: absolute;
+    margin-top: 200px;
+    background: var(--grey-hide);
+    padding: 2rem;
+}
+
+#sky {
+    position: absolute;
+    width: 2800px;
+    z-index: 1;
+}
+
+#bg{
+    position: absolute;
+    width: 1920px;
+    z-index: 2;
+}
+
+#clouds {
+    position: absolute;
+    width: 1920px;
+    z-index: 3;
+}
+
+#middle{
+    position: absolute;
+    width: 2120px;
+    z-index: 4;
+    margin-right: -200px;
+}
+
+.Text {
+    position: absolute;
+    z-index: 10;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: var(--grey-hide);
+    padding: 2rem;
+}
+
+.Text h2 {
+    font-weight: 100;
+    font-size: 6.5rem;
+    
+}
+
+.Text h1 {
+    font-weight: 800;
+    font-size: 8rem;
+    line-height: 0.88;
+}
+
+#capybara{
+    position: absolute;
+    z-index: 6;
+    top: 700px;
+    right: 0%;
+}
+
+#fg {
+    position: absolute;
+    width: 2000px;
+    z-index: 7;
+    margin-left: -70px;
+}
+
+
+#references{
+    padding: 100px;
+}
+
+#emailtext{
+    position: relative;
+    left: 35%;
+    font-size: 20px;
+    right: 50%;
+}
+
+#emailruta{
+    position: relative;
+    left: 35%;
+    right: 50%;
+}
+
+#submitruta{
+    position: relative;
+    left: 35%;
+    right: 50%;
+} 
+
+#skolarbete{
+    font-size: 20px;
+    padding: 70px;
+}
+
+@media screen and (max-width: 1200px){
+
+}
+
+@media screen and (max-width: 786px) {
+
+.Text h2 {
+    font-size: 70px;
+}
+
+.Text h1 {
+    font-size: 80px;
+}
+
+#references{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#emailtext {
+    position: static;
+    left: 0%;
+    font-size: 20px;
+    right: 0%;
+}
+
+#emailruta {
+    position: static;
+    left: 0%;
+    right: 0%;
+}
+
+#submitruta {
+    position: static;
+    left: 0%;
+    right: 0%;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+    
+.Text h2 {
+    font-size: 50px;
+}
+
+.Text h1 {
+    font-size: 60px;
+}
+
+}
+
+@media screen and (max-width: 407px){
+
+#info{
+    display: flex;
+    font-size: 12px;
+}
+
+#frågaoss{
+    display: flex;
+    font-size: 12px;
+}
+
+}

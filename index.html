@@ -8,8 +8,20 @@
     <title>Parallax Website</title>
     <link rel="icon" href="img/leaflogo.png" type="image/x-icon" />
     <meta name="description" content="Ta vara på naturens resurser" />
-    <style></style>
   </head>
+  <style>
+    #instagram {
+      width: 50px;
+      height: 50px;
+      background: url("../img/css_sprites.png") -10px -10px;
+    }
+
+    #twitter {
+      width: 50px;
+      height: 50px;
+      background: url("../img/css_sprites.png") -80px -10px;
+    }
+  </style>
   <body>
     <header>
       <nav>
@@ -127,7 +139,6 @@
         clouds.style.left = value * 0.75 + "px";
         clouds.style.top = value * 1 + "px";
         middle.style.top = value * 1 + "px";
-        fg.style.left = value * 0.05 + "px";
         fg.style.top = value * 1 + "px";
         sky.style.top = value * 1 + "px";
         bg.style.top = value * 1 + "px";
@@ -181,11 +192,16 @@
       <div class="mediacontainer">
         <img
           id="instagram"
-          src="img/1x1.png"
+          src="img/genom0.png"
           alt="instagram logga"
           tabindex="0"
         />
-        <img id="twitter" src="img/1x1.png" alt="twitter logga" tabindex="0" />
+        <img
+          id="twitter"
+          src="img/genom0.png"
+          alt="twitter logga"
+          tabindex="0"
+        />
       </div>
     </footer>
   </body>

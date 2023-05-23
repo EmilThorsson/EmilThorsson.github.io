@@ -1,273 +1,273 @@
-
 :root {
-    --grey-hide: hsla(0, 0%, 0%, 0.1);
+  --grey-hide: hsla(0, 0%, 0%, 0.1);
 }
 
-*{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-scroll-behavior: smooth;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-body{
-    background-color:#331C12;
-    padding: 0;
-    margin: 0;
+body {
+  background-color: #331c12;
+  padding: 0;
+  margin: 0;
 }
 
-.logo{
-    width: 100px;
+.logo {
+  width: 100px;
 }
 
-header{
-    position: absolute;
-    z-index: 10000;
-    width: 100%;
-    padding: 0.9rem;
-    top: 0;
-    left: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+header {
+  position: absolute;
+  z-index: 10000;
+  width: 100%;
+  padding: 0.9rem;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-header nav{
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header nav {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header ul{
-    display: flex;
-    list-style: none;
-    align-items: center;
+header ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
 }
 
-header ul a{
-    text-decoration: none;
-    color: #fff;
-    padding: 0 1.5rem;
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 0.83rem;
+header ul a {
+  text-decoration: none;
+  color: #111;
+  padding: 0 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 0.83rem;
 }
 
-main{
-    position: relative;
-    height: 200vh;
-    width: 100%;
-    overflow: hidden;
+main {
+  position: relative;
+  height: 200vh;
+  width: 100%;
+  overflow: hidden;
 }
 
 .first {
-    position: absolute;
-    background: var(--grey-hide);
-    padding: 2rem;
-    font-size: 23px;
-    margin-top: 46%;
+  position: absolute;
+  background: var(--grey-hide);
+  padding: 2rem;
+  font-size: 23px;
+  margin-top: 46%;
 }
 
 .sec {
-    position: absolute;
-    background: var(--grey-hide);
-    padding: 2rem;
-    font-size: 23px;
-    margin-top: 125%;
+  position: absolute;
+  background: var(--grey-hide);
+  padding: 2rem;
+  font-size: 23px;
+  margin-top: 125%;
 }
 
 #sky {
-    position: absolute;
-    width: 2800px;
-    z-index: 1;
+  position: absolute;
+  width: 2800px;
+  z-index: 1;
+  margin-top: -100px;
 }
 
-#bg{
-    position: absolute;
-    width: 1920px;
-    z-index: 2;
+#bg {
+  position: absolute;
+  width: 1920px;
+  z-index: 2;
 }
 
 #clouds {
-    position: absolute;
-    width: 1920px;
-    z-index: 3;
+  position: absolute;
+  width: 1920px;
+  z-index: 3;
 }
 
-#middle{
-    position: absolute;
-    width: 2120px;
-    z-index: 4;
-    margin-right: -200px;
+#middle {
+  position: absolute;
+  width: 2120px;
+  z-index: 4;
+  margin-right: -200px;
 }
 
 .Text {
-    position: absolute;
-    z-index: 10;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    padding: 2rem;
-    
+  position: absolute;
+  z-index: 10;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 2rem;
 }
 
 .Text h2 {
-    font-weight: 100;
-    font-size: 6.5rem;
-    background: var(--grey-hide);
+  font-weight: 100;
+  font-size: 6.5rem;
+  background: var(--grey-hide);
 }
 
 .Text h1 {
-    font-weight: 800;
-    font-size: 8rem;
-    line-height: 0.88;
-    background: var(--grey-hide);
-    margin-bottom: -25%;
+  font-weight: 800;
+  font-size: 8rem;
+  line-height: 0.88;
+  background: var(--grey-hide);
+  margin-bottom: -25%;
 }
 
-#capybara{
-    position: absolute;
-    z-index: 6;
-    top: 700px;
-    right: 0%;
+#capybara {
+  position: absolute;
+  z-index: 6;
+  top: 700px;
+  right: 0%;
 }
 
 #fg {
-    position: absolute;
-    width: 2000px;
-    z-index: 7;
-    margin-left: -70px;
+  position: absolute;
+  width: 2000px;
+  z-index: 7;
+  margin-left: -70px;
 }
 
-
-#references{
-    padding: 100px;
-    
-}
-
-#emailtext{
-    position: relative;
-    left: 35%;
-    font-size: 20px;
-    right: 50%;
-    color: #fff;
-}
-
-#emailruta{
-    position: relative;
-    left: 35%;
-    right: 50%;
-}
-
-#submitruta{
-    position: relative;
-    left: 35%;
-    right: 50%;
-} 
-
-#skolarbete{
-    font-size: 20px;
-    padding: 70px;
-    color: #fff;
-}
-
-@media screen and (max-width: 1200px){
-
-#emailtext{
-   position: static;
-}
-
-#emailruta{
-    position: static;
-    
-}
-
-#submitruta{
-    position: static;
-}
-
-}
-
-@media screen and (max-width: 786px) {
-
-.Text h2 {
-    font-size: 70px;
-   
-}
-
-.Text h1 {
-    font-size: 80px;
-}
-
-.first {
-    font-size: 18px;
-   
-}
-
-.sec{
-    font-size: 18px;
-    margin-top: 180%;
+#references {
+  padding: 100px;
 }
 
 #emailtext {
-    position: static;
-    font-size: 20px;
-   
+  position: relative;
+  left: 35%;
+  font-size: 20px;
+  right: 50%;
+  color: #fff;
 }
 
 #emailruta {
-    position: static;
-   
+  position: relative;
+  left: 35%;
+  right: 50%;
 }
 
 #submitruta {
-    position: static;
-    
+  position: relative;
+  left: 35%;
+  right: 50%;
 }
 
+#skolarbete {
+  font-size: 20px;
+  padding: 70px;
+  color: #fff;
+}
+
+.mediacontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#instagram {
+  width: 50px;
+  height: 50px;
+  background: url("../img/css_sprites.png") -10px -10px;
+}
+
+#twitter {
+  width: 50px;
+  height: 50px;
+  background: url("../img/css_sprites.png") -80px -10px;
+}
+
+@media screen and (max-width: 1200px) {
+  #emailtext {
+    position: static;
+  }
+
+  #emailruta {
+    position: static;
+  }
+
+  #submitruta {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .Text h2 {
+    font-size: 70px;
+  }
+
+  .Text h1 {
+    font-size: 80px;
+  }
+
+  .first {
+    font-size: 18px;
+  }
+
+  .sec {
+    font-size: 18px;
+    margin-top: 180%;
+  }
+
+  #emailtext {
+    position: static;
+    font-size: 20px;
+  }
+
+  #emailruta {
+    position: static;
+  }
+
+  #submitruta {
+    position: static;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    
-.Text h2 {
+  .Text h2 {
     font-size: 50px;
-}
+  }
 
-.Text h1 {
+  .Text h1 {
     font-size: 60px;
-}
+  }
 
-.first{
+  .first {
     font-size: 12px;
     margin-top: 100%;
-}
+  }
 
-.sec{
+  .sec {
     font-size: 12px;
     margin-top: 230%;
+  }
 }
 
-}
-
-@media screen and (max-width: 407px){
-
-#info{
+@media screen and (max-width: 407px) {
+  #info {
     display: flex;
     font-size: 12px;
-}
+  }
 
-#frågaoss{
+  #frågaoss {
     display: flex;
     font-size: 12px;
-}
+  }
 
-#skolarbete{
+  #skolarbete {
     font-size: 18px;
-    
-}
-
+  }
 }
